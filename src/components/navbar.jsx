@@ -19,7 +19,7 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-white-800">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-2 lg:px-6 lg:px-10">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -35,12 +35,12 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="block h-8 w-auto lg:hidden"
+                    className="block h-12 w-auto lg:hidden"
                      src="https://www.jaipuriaschoolkasganj.in/wp-content/uploads/2021/02/kasganj_logo-1.jpg"
                     alt="Your Company"
                   />
                   <img
-                    className="hidden h-8 w-auto lg:block"
+                    className="hidden h-12 w-auto lg:block"
                      src="https://www.jaipuriaschoolkasganj.in/wp-content/uploads/2021/02/kasganj_logo-1.jpg"
                     alt="Your Company"
                   />
@@ -53,7 +53,7 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'text-black' : 'text-black-300  hover:text-white hover: underline',
+                          item.current ? 'text-black no-underline' : 'text-black-300 font-1100',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}

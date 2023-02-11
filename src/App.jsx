@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import Navbar from './components/navbar'
+import { AllRoutes } from './components/Routes/allroutes'
 
 function App() {
   
@@ -10,7 +11,7 @@ function App() {
     <div className="App">
    
      <Navbar/>
-     <h1 className='text-red-700 text-2xl'>Akib Ali </h1>
+     <AllRoutes/>
     </div>
   )
 }
