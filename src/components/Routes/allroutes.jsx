@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import { AboutUs } from '../aboutUs'
-import { Home } from '../home'
+import { HomeMain } from '../home-modal/home_main'
+
 
 export const AllRoutes=()=>{
 
@@ -9,7 +10,7 @@ export const AllRoutes=()=>{
         
         <>
        <Routes>
-        <Route path='/' element={<Home/>} /> 
+        <Route path='/' element={<HomeMain/>} /> 
         <Route path="/about-us" element={<AboutUs/>}/>
        </Routes>
         </>
